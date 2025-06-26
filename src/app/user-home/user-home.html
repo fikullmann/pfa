@@ -1,0 +1,8 @@
+<input type="number" [(ngModel)]="nr"/>
+<button type="submit" (click)="logPoms()">Submit</button>
+
+<div>
+  @for (pom of currentUser().poms.slice().reverse(); track pom.id) {
+    <p>{{pom.id}} - {{pom.datetime | date }}</p>
+  }
+</div>
