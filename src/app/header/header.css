@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  padding-inline: 16px;
+  padding-block: 2px;
+  background-color: #c05d5d;
+  color: rgb(44, 44, 44);
+  align-items: center;
+  justify-content: space-between;
+  font-family: Calibri;
+}
+
+
+* {
+  outline: none;
+}

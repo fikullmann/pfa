@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   <header>
     <h1>Pomfight Adventure!</h1>
   </header>`,
-  styles: ''
+  styleUrl: 'header.css'
 })
 export class Header {
 
