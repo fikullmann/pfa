@@ -3,6 +3,6 @@
 
 <div>
   @for (pom of currentUser().poms.slice().reverse(); track pom.id) {
-    <p>{{pom.id}} - {{pom.datetime | date }}</p>
+    <p>{{pom.id}} - {{pom.datetime.toLocaleString()}}</p>
   }
 </div>

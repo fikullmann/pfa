@@ -1,4 +1,4 @@
-import { Pom } from "./pom"
+import { Pom } from "./user-home/pom"
 
 export interface User {
   id: number,

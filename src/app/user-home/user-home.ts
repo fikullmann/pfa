@@ -1,11 +1,10 @@
 import { Component, model, input, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { User } from './user';
-import { DatePipe } from '@angular/common';
+import { User } from '../user';
 
 @Component({
   selector: 'app-user-home',
-  imports: [FormsModule, DatePipe],
+  imports: [FormsModule],
   templateUrl: './user-home.html',
   styleUrl: './user-home.css'
 })
