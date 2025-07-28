@@ -7,3 +7,15 @@ html, body {
 * {
   outline: none;
 }
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../public/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../public/Poppins/Poppins-SemiBold.ttf');
+}

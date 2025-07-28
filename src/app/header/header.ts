@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-header',
   imports: [],
   template: `
-  <header>
+  <div class="header">
     <h1>Pomfight Adventure!</h1>
-  </header>`,
+  </div>`,
   styleUrl: 'header.css'
 })
 export class Header {
