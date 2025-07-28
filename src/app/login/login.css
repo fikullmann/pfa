@@ -8,7 +8,7 @@
 }
 
 .image {
-  flex: 1 1 30%;
+  flex: 1 1 50%;
   overflow: hidden;
   min-width: 0;
 }
@@ -17,7 +17,7 @@
   margin-left: 30px;
   display: flex;
   flex-direction: column;
-  flex: 2 0 auto;
+  flex: 1 0 auto;
   align-items: end;
 }
 
