@@ -10,7 +10,7 @@ import { User } from '../user';
 })
 export class UserHome {
   currentUser = model<User>(
-    { id: 1, name: "Anoi", poms: [] }
+    { id: 1, username: "Anoi", password: "", poms: [] }
   );
   nr: number = 0;
 

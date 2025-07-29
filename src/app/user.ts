@@ -2,6 +2,7 @@ import { Pom } from "./user-home/pom"
 
 export interface User {
   id: number,
-  name: string,
+  username: string,
+  password: string,
   poms: Pom[],
 }

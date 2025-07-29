@@ -13,9 +13,9 @@
       <!-- <div class="login-input"> -->
         <form (ngSubmit)="onSubmit()" class="login-input">
           <label for="username" class="login-label">Username</label>
-          <input type="text" id="username" class="input" placeholder="Enter your Username">
+          <input type="text" id="username" required [(ngModel)]="username" class="input" placeholder="Enter your Username">
           <label for="password" class="login-label">Password</label>
-          <input type="password" id="password" class="input" placeholder="Enter your Password">
+          <input type="password" id="password" required [(ngModel)]="password" class="input" placeholder="Enter your Password">
           <div>
           <input type="checkbox" id="remember" class="remember-input">
           <label for="remember" class="remember-label">Remember me</label>

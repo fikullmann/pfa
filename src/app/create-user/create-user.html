@@ -1,1 +1,24 @@
-<p>create-user works!</p>
+<h3>Register</h3>
+{{ this.user | json }}
+<form #userForm="ngForm" (ngSubmit)="onSubmit()" >
+  <div class="vertical-layout">
+    <label for="name">Username</label>
+    <input type="text"
+        id="name"
+        required
+        [(ngModel)]="user.username"
+        name="username"
+        #name="ngModel"
+    >
+    <div [hidden]="name.valid || name.pristine" style="color: red">
+      You must enter a valid email
+    </div>
+    <label for="name">Email</label>
+    <input type="text" id="name" required [(ngModel)]="user.email" name="email">
+    <label for="password">Password</label>
+    <input type="password" id="password" required [(ngModel)]="user.password" name="password">
+    <label for="password2">Repeat Password</label>
+    <input type="password" id="password2" required [(ngModel)]="user.password2" name="password">
+    <button type="submit" [disabled]="!userForm.valid">Submit</button>
+  </div>
+</form>
