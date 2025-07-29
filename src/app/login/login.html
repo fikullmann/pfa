@@ -1,6 +1,8 @@
 <div class="flex-container">
-  <img src='images/Rectangle_77.png' alt="Image" class="image"/>
-  <!-- <div class="login-right"> -->
+  <div class="image-box">
+    <img src='images/Rectangle_77.png' alt="Image" class="image"/>
+  </div>
+  <div class="login-right">
     <!-- <b>Your Logo</b> -->
     <div class="login-box">
       <p>Welcome to Pomfights!</p>
@@ -8,19 +10,21 @@
         <button type="button" class="login-button-active">Login</button>
         <a routerLink="/user" routerLinkActive="active" class="login-button-unactive">Register</a>
       </div>
-      <div class="login-input">
-        <label for="username" class="login-label">Username</label>
-        <input type="text" id="username" class="input" placeholder="Enter your Username">
-        <label for="password" class="login-label">Password</label>
-        <input type="password" id="password" class="input" placeholder="Enter your Password">
-        <div>
-        <input type="checkbox" id="remember" class="remember-input">
-        <label for="remember" class="remember-label">Remember me</label>
-        </div>
-        <div class="submit-div">
-          <button type="button" class="login-button-active">Login</button>
-        </div>
-      </div>
+      <!-- <div class="login-input"> -->
+        <form (ngSubmit)="onSubmit()" class="login-input">
+          <label for="username" class="login-label">Username</label>
+          <input type="text" id="username" class="input" placeholder="Enter your Username">
+          <label for="password" class="login-label">Password</label>
+          <input type="password" id="password" class="input" placeholder="Enter your Password">
+          <div>
+          <input type="checkbox" id="remember" class="remember-input">
+          <label for="remember" class="remember-label">Remember me</label>
+          </div>
+          <div class="submit-div">
+            <button type="submit" [disabled]=false class="login-button-active">Login</button>
+          </div>
+        </form>
+      <!-- </div> -->
     </div>
-  <!-- </div> -->
+  </div>
 </div>
